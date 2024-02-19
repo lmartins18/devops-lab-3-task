@@ -1,5 +1,5 @@
 #! bin/bash
-sudo apt update && sudo apt install -y nodejs npm
+sudo apt update && sudo apt -y install nodejs npm
 # Install pm2
 sudo npm install -g pm2
 # Stop any instance of our application running currently
