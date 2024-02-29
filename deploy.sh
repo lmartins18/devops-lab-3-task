@@ -8,5 +8,7 @@ pm2 stop example_app
 cd devops-lab-3-task/
 # Install app dependencies
 npm install
+echo $PRIVATE_KEY > privatekey.pem
+echo $SERVER > server.crt
 # Start application on pm2
 pm2 start ./bin/www --name example_app
