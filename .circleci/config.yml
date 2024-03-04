@@ -39,7 +39,7 @@ jobs:
           command: npm run test
       - run:
           name: docker-login
-          command: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+          command: docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
       - run: 
           name: Build docker image
           command: docker build -t $DOCKER_USERNAME/devops-lab-3-task:latest .
